@@ -36,6 +36,7 @@ jobs:
         echo 'orientation = portrait' >> buildozer.spec
         echo 'fullscreen = 0' >> buildozer.spec
         echo 'android.permissions = INTERNET' >> buildozer.spec
+        echo 'android.accept_sdk_license = True' >> buildozer.spec
 
     - name: Build with Buildozer
       run: |
